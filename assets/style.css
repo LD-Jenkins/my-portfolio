@@ -11,21 +11,35 @@ html {
 
 body {
     background-image: url(./images/tengyart-k3ZLQ5YDGG0-unsplash.jpg);
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-color: #cccccc;
+    background-position: center; 
+    background-repeat: repeat-y; 
     background-size: cover;
     height: 100%;
+    font: 1.3rem Inconsolata, monospace;
+    letter-spacing: -.1rem;
+    color: rgb(34, 146, 58);
 }
 
-body header {
+body div {
+    background-color: black;
+    margin: 2rem;
+    width: auto;
+    border: .75rem solid rgb(34, 146, 58);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    
+}
+
+body div header {
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #a1e0f0;
-    color: #050618;
+    width:100%;
+    padding: 1.25rem;  
 }
+
 
 body header h1 {
     font-size: 3rem;
@@ -37,24 +51,31 @@ body header nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+   
 }
 
 body header nav ul li {
     margin-right: 2rem;
     margin-top: 1rem;
     font-size: 1.25rem;
+    
+}
+
+body div header img {
+    max-height: 7rem;
+    width: auto;
+    margin-bottom: -2rem;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(34, 146, 58);
 }
 
 body main {
     height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin: 2rem;
     padding: 2rem;
     
@@ -63,21 +84,50 @@ body main {
 .about-me {
     display: flex;
     flex-direction: row;
-    background-color: #a1e0f0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    flex: 1 1 1;
+    
+}
+
+.about-me h2 {
+    white-space: nowrap;
+}
+
+.first-project {
+    height: auto;
+    width: 100%;
 }
 
 .my-work {
     display: flex;
     flex-direction: row;
-    background-color: #a1e0f0;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    overflow: auto;
+    min-height: 20rem;
+}
+
+.my-work h2 {
+    white-space: nowrap;
 }
 
 body main div h2 {
     margin-right: 2rem;
-    padding-left: 2rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
 }
 
-footer {
+body footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 5rem;
 }
+
+body footer p {
+    font-size: 1rem;
+    padding-top: .5rem;
+}
+
