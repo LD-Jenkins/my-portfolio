@@ -4,11 +4,15 @@ This page is now live at https://ld-jenkins.github.io/my-portfolio/ !
 
 ## Project Description
 
-2/13/2021
+Updated: 4/5/2021
 
 This project is the beginning of an online portfolio to showcase the projects I have created myself either from scratch or starting from some code base.
-The webpage features my name, a navigation bar for quick access to the documents sections, an area displaying images with links to my work and a contacts section where you may get ahold of me.
+The webpage features information about me, ways to contact me such as my LinkedIn and GitHub profile, a navigation bar that loads any content necessary without needing to load a new page, and an area displaying images and links to my work.
 
-This starting design is intended to resemble that of an old terminal with green text and a black background. In the future as I complete more projects and gain more knowledge of the world of web development I intend to revisit the design of the webpage to bring out a more immersive look.
+The design is intended to resemble that of an old CRT monitor showing the well-known lines of pixels. All images are set on an older Windows window that may be familiar to some. The simplicity of the site is an intentional design choice.
 
-This project is 100% my original work aside from a background image I found at https://unsplash.com/ .
+In the future I intend to dive deeper into the old Windows theme, adding more familiar old window styles, a scanline effect, and possibly a working, in-browser, slimmed down version of MS Paint.
+
+## Example Image
+
+![About Me Page](./assets/images/imageofworkingsite.PNG)
