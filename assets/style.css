@@ -2,10 +2,10 @@
     font-family: 'VT323', sans-serif;
 }
 
-body {
-    height: max-content;
+html, body {
     overflow: auto;
     clear: both;
+    height: 100%;
 }
 
 

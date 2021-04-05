@@ -6,9 +6,9 @@ $(window).on('click', function () {
     $(".dropdown-menu").removeClass('show');
   });
 
-$(window).on('resize', () => {
+// $(window).on('resize', () => {
     
-})
+// })
 
 const main = document.getElementById("main");
 const dropdownBtns = document.getElementsByClassName("dropdown-item");
