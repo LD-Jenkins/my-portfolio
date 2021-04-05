@@ -1,133 +1,138 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    font-size: 16px;
-    height: 100%;
+    font-family: 'VT323', sans-serif;
 }
 
 body {
-    background-image: url(./images/tengyart-k3ZLQ5YDGG0-unsplash.jpg);
-    background-color: #cccccc;
-    background-position: center; 
-    background-repeat: repeat-y; 
-    background-size: cover;
-    height: 100%;
-    font: 1.3rem Inconsolata, monospace;
-    letter-spacing: -.1rem;
-    color: rgb(34, 146, 58);
-}
-
-body div {
-    background-color: black;
-    margin: 2rem;
-    width: auto;
-    border: .75rem solid rgb(34, 146, 58);
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    
-}
-
-body div header {
-    display: flex;
-    flex-direction: row;
-    width:100%;
-    padding: 1.25rem;  
-}
-
-
-body header h1 {
-    font-size: 3rem;
-    margin-right: 4rem;
-    margin-left: 1rem;
-}
-
-body header nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-   
-}
-
-body header nav ul li {
-    margin-right: 2rem;
-    margin-top: 1rem;
-    font-size: 1.25rem;
-    
-}
-
-body div header img {
-    max-height: 7rem;
-    width: auto;
-    margin-bottom: -2rem;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(34, 146, 58);
-}
-
-body main {
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    padding: 2rem;
-    
-}
-
-.about-me {
-    display: flex;
-    flex-direction: row;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 1rem;
-    flex: 1 1 1;
-    
-}
-
-.about-me h2 {
-    white-space: nowrap;
-}
-
-.first-project {
-    height: auto;
-    width: 100%;
-}
-
-.my-work {
-    display: flex;
-    flex-direction: row;
-    padding-top: 2rem;
-    padding-right: 2rem;
+    height: max-content;
     overflow: auto;
-    min-height: 20rem;
+    clear: both;
 }
 
-.my-work h2 {
-    white-space: nowrap;
+
+.crt::after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(26, 24, 24, 0);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+
+}
+.crt::before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(3, 5, 3, 0.548) 50%, rgba(0, 0, 0, 0.883) 50%);
+    z-index: 2;
+    background-size: 100% 2px;
+    pointer-events: none;
 }
 
-body main div h2 {
-    margin-right: 2rem;
+nav, nav button {
+    
+    color: rgb(5, 3, 3);
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 1.25rem;
+    margin-bottom: 10rem;
+}
+
+#dropdownBtn {
+    font-size: 2rem !important;
+    margin: 0px;
+    padding: 0px 0px 6px 0px !important;
+    text-align: center;
+}
+
+.dropdown-item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0) !important;
+
+
+}
+
+.header {
     margin-left: 2rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#selfie {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+#selfie img {
+    width: 200px;
+    height: auto;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+#contact-info {
     font-size: 1.5rem;
+    margin: 2rem;
 }
 
-body footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 5rem;
+
+
+.my-card div h5 {
+    font-size: 2rem;
 }
 
-body footer p {
-    font-size: 1rem;
-    padding-top: .5rem;
+.my-card div p, .my-card div a {
+    font-size: 1.25rem;
 }
 
+#about-me div p {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+#main p {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+#card-container {
+    display: table;
+    max-height: 33vh;
+}
+
+@media screen and (max-width: 920px) {
+    #selfie {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1530px) {
+    .my-card div h5 {
+        font-size: 1.5rem;
+    }
+    
+    .my-card div p {
+        font-size: .75rem;
+    }
+}

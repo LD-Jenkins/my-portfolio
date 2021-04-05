@@ -4,43 +4,103 @@
 
 <head>
     <meta charset="utf-8">
-    <title>My Portfolio</title>
+    <title>Leighton Jenkins</title>
+    <link href="http://fonts.cdnfonts.com/css/vt323" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
+
 </head>
 
 <body>
-    <div>
-        <header>
-            <h1>L-Jenkins</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#my-work">My Work</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
-            <img src="./assets/images/me.jpg" alt="image of Leighton Jenkins">
-        </header>
-        <main>
-            <div class="about-me" id="about-me">
-                <h2>ABOUT ME:</h2>
-                <p>Hi, I'm Leighton Jenkins. In 2021 I began a full-stack web development bootcamp program with Southern Methodist University. Though I am still a beginner, what I lack in professional experience I make up for in passion and determination. I am part-way through a Computer Engineering degree with the University of North Texas where I plan to graduate in 2023-24 and have big plans for the future. With this portfolio I hope to show you what I can bring to the proverbial table.</p>
+    <div class="crt">
+        <nav class="dropdown">
+            C:\Users\LeightonJenkins\portfolio-nav\
+            <button class="btn button-outline-dark dropdown-toggle" type="button" id="dropdownBtn"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                about-me
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item" type="button">my-work</button></li>
+                <li><button class="dropdown-item" type="button">contact</button></li>
+            </ul>
+            <div id="selfie">
+                <img src="assets/images/meinwindow.png">
             </div>
-            <div class="my-work" id="my-work">
-                <h2>MY WORK:</h2>
-                <!-- links and images to projects -->
-                <a href="https://ld-jenkins.github.io/mcrefactor-face/">
-                    <img src="./assets/images/first-project.png" class="first-project">
-                </a>
+        </nav>
+        <div id="main">
+            <div class="header">About Me</div>
+            <p>Hi, I'm Leighton Jenkins. In 2021 I began a full-stack web development bootcamp program with Southern
+                Methodist University. Though I am still a beginner, what I lack in professional experience I make up for
+                in passion and determination. I am part-way through a Computer Engineering degree with the University of
+                North Texas where I plan to graduate in 2023-24 and have big plans for the future. With this portfolio I
+                hope to show you what I can bring to the proverbial table.</p>
+        </div>
+    </div>
+    <script id="about-me" type="text/html">
+        <div>
+            <div class="header">About Me</div>
+            <p>Hi, I'm Leighton Jenkins. In 2021 I began a full-stack web development bootcamp program with Southern Methodist University. Though I am still a beginner, what I lack in professional experience I make up for in passion and determination. I am part-way through a Computer Engineering degree with the University of North Texas where I plan to graduate in 2023-24 and have big plans for the future. With this portfolio I hope to show you what I can bring to the proverbial table.</p>
+        </div>
+    </script>
+    <script id="my-work" type="text/html">
+        <div id="card-container">
+            <div class="row g-0 bg-light position-relative my-card">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                    <img src="assets/images/projectinwindow.png" class="mh-30" alt="weather checker app">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                    <h5 class="mt-0">Awesome Stat Tracker Project</h5>
+                    <p>Ever wanted to compare your stats with the pros? Look no further! Simply type in the username you want to search and the game/platform to search on and see where you (or your friends) stand!</p>
+                    <a href="https://dmanley93.github.io/Project-1-Group-5/">Link to deployed site.</a><br>
+                    <a href="https://github.com/Dmanley93/Project-1-Group-5">Link to GitHub repository.</a>
+                </div>
             </div>
-        </main>
-        <footer class="contacts">
-            <h2>CONTACTS:</h2>
-            <p>Email: leightonjenkins84@gmail.com</p>
-            <p>GitHub: https://github.com/LD-Jenkins</p>
-        </footer>
-    </div>  
-    
+            <div class="row g-0 bg-light position-relative my-card">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                    <img src="assets/images/checkerinwindow.png" class="mh-30" alt="weather checker app">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                    <h5 class="mt-0">Weather Checker</h5>
+                    <p>An app to check the weather in searchable cities! Simply type in a city you would like to know the current weather and 5-day forecast for. Previous searches will be saved.</p>
+                    <a href="https://ld-jenkins.github.io/weather-checker/">Link to deployed site.</a><br>
+                    <a href="https://github.com/LD-Jenkins/weather-checker">Link to GitHub repository.</a>
+                </div>
+            </div>
+        
+            <div class="row g-0 bg-light position-relative my-card">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                    <img src="assets/images/schedulerinwindow.png" class="mh-30" alt="weather checker app">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                    <h5 class="mt-0">Day Scheduler</h5>
+                    <p>For when your work day is busy and you need a little help planning. Type in your plans for an hour block and click save!</p>
+                    <a href="https://ld-jenkins.github.io/scheduler/">Link to deployed site.</a><br>
+                    <a href="https://github.com/LD-Jenkins/scheduler">Link to GitHub repository.</a>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script id="contact" type="text/html">
+        <div>
+            <div class="header">Contacts and Everything Else</div>
+            <div id="contact-info">
+                <div>Email: leightonjenkins84@gmail.com</div>
+                <div>Phone: 940-224-9045</div>
+                <a href="https://github.com/LD-Jenkins">Check Out My GitHub</a><br>
+                <a href="https://www.linkedin.com/in/leighton-jenkins-a74ab563/">Find Me On LinkedIn</a>
+            </div>
+        </div>
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
 </body>
+
 
 </html>
