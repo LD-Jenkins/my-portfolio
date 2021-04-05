@@ -15,4 +15,4 @@ In the future I intend to dive deeper into the old Windows theme, adding more fa
 
 ## Example Image
 
-![About Me Page](./assets/images/imageofworkingsite.PNG)
+![About Me Page](.\assets\images\imgofworkingsite.PNG)
