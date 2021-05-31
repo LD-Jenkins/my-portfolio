@@ -1,0 +1,149 @@
+* {
+    font-family: 'VT323', sans-serif;
+}
+
+html, body {
+    overflow: auto;
+    clear: both;
+    height: 100%;
+}
+
+
+.crt::after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(7, 0, 0);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+
+}
+.crt::before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(3, 5, 3, 0.424) 50%, rgba(24, 23, 23, 0.733) 50%);
+    z-index: 2;
+    background-size: 100% 2px;
+    pointer-events: none;
+}
+
+button:focus {
+  border: none;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+nav {
+    
+    color: rgb(5, 3, 3) !important;
+    font-size: 2rem !important;
+    font-weight: bolder !important;
+    margin: 1.25rem !important;
+    margin-bottom: 10rem !important;
+}
+
+.dropdown-menu {
+  border: 1px solid rgba(133, 122, 122, 0.664) !important;
+  border-radius: 0rem !important;
+  background-color: rgb(168, 163, 163) !important;
+  padding: 0px !important;
+  box-shadow: 5px 5px rgba(26, 23, 23, 0.411);
+}
+
+#dropdownBtn {
+    font-size: 2rem !important;
+    margin: 0px;
+    padding: 0px 0px 6px 0px !important;
+    text-align: center;
+    padding-bottom: .5rem !important;
+    border: none !important;
+}
+
+.dropdown-item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 1rem !important;
+    padding-right: 0rem !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.25rem;
+}
+
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: rgba(4, 29, 250, 0.397) !important;
+}
+
+.header {
+    margin-left: 2rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#selfie {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+#selfie img {
+    width: 200px;
+    height: auto;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+#contact-info {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.my-card div h5 {
+    font-size: 2rem !important;
+}
+
+.my-card div {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#about-me-text {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+/* #main p {
+    font-size: 1.5rem;
+    margin: 2rem;
+} */
+
+#card-container {
+    display: table;
+    max-height: 33vh;
+}
+
+@media screen and (max-width: 920px) {
+    #selfie {
+        display: none;
+    }
+}
